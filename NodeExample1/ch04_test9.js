@@ -5,7 +5,7 @@ var fs = require('fs');
 fs.open('./output.txt', 'r', function(err, fd) {
     if(err) throw err;
     
-    var buf = new Buffer(10);
+    var buf = new Buffer(10); // 바이트의 크기를 지정
     console.log('버퍼 타입: %s',  Buffer.isBuffer(buf));
     
     fs.read(fd, buf, 0, buf.length, null, function(err, bytesRead, buffer){
