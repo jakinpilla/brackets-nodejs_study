@@ -4,7 +4,9 @@
   "description": "",
   "main": "calc.js",
   "dependencies": {
-    "nconf": "^0.10.0"
+    "moment": "^2.24.0",
+    "nconf": "^0.10.0",
+    "winston": "^3.2.1"
   },
   "devDependencies": {},
   "scripts": {
