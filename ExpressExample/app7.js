@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({extended : false}));
 // application/json parsing...
 app.use(bodyParser.json());
 
-app.use('/ExpressExample/public', serveStatic(path.join(__dirname, 'ExpressExample/public')));
+app.use(serveStatic(path.join(__dirname, 'public')));
 
 // param check in middleware...
 app.use(function(req, res, next){
